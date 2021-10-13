@@ -18,6 +18,23 @@ app.get('/productos', (req, res) => {
   });
 });
 
+app.get('/productos/:id', (req, res) => {
+  const { id } = req.params;
+  res.json({
+    id,
+    name: 'Producto 1',
+    price: 100,
+  });
+});
+
+app.get('/categories/:categoryId/products/:productId', (req, res) => {
+  const { categoryId, productId } = req.params;
+  res.json({
+    categoryId,
+    productId,
+  });
+});
+
 app.listen(port, () => {
   console.log('Mi port ' + port);
 });
