@@ -1,3 +1,18 @@
+#### Deply en Heroku
+1) Instalar Heroku-cli
+2) Hace el login con `heroku login`
+3) Dentro del proyecto ejecutar `heroku create`, va generar el repositorio en heroku, para abrirlo, usar `heroku open`
+4) Con `heroku logs --tail` podemos ver la cola de logs 
+5) Agergar la siguente clave en el package.json:
+
+```json
+"engines": {
+    "node": "14.x"
+  },
+```
+
+6) Probar en modo local `heroku local web`
+
 #### Middlewares populares en Express.js
 
 ##### CORS
