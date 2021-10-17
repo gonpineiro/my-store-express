@@ -1,4 +1,4 @@
-#### Deply en Heroku
+#### Deploy en Heroku
 1) Instalar Heroku-cli
 2) Hace el login con `heroku login`
 3) Dentro del proyecto ejecutar `heroku create`, va generar el repositorio en heroku, para abrirlo, usar `heroku open`
